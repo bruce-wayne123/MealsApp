@@ -1,5 +1,9 @@
 var meals = [];
-var favMeals = JSON.parse(localStorage.getItem("favList"));
+var favMeals =[];
+var getStorageList= JSON.parse(localStorage.getItem("favList"));
+if (getStorageList!=null) {
+    favMeals=getStorageList;
+}
 var searchResultList = document.getElementById("resultList");
 var searchBox = document.getElementById("searchBox");
 var countLabel = document.getElementById("mealsCountLabel");
