@@ -95,13 +95,13 @@ function GoToFavouraites() {
     searchBox.value = '';
     console.log(favMeals);
     localStorage.setItem('favList', JSON.stringify(favMeals));//Saving the favouraite meals in local storage
-    location.href = "/Views/Favouraites/FavouraitesPage.html";
+    location.href = "Views/Favouraites/FavouraitesPage.html";
 }
 
 //Navigate to Meals details page 
 function GoToMealsDetails(mealId) {
     searchResultList.innerHTML = '';
     searchBox.value = '';
-    location.href = "/Views/MealsDetails/mealDetailsPage.html";
+    location.href = "Views/MealsDetails/mealDetailsPage.html";
     sessionStorage.setItem('mealId', mealId);
 }
